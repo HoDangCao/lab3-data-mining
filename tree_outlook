@@ -1,0 +1,18 @@
+// The Round Table
+digraph "round-table" {
+	"" [label=outlook]
+	"" -> overcast [label=overcast]
+	overcast [label=yes]
+	"" -> rain [label=rain]
+	rain [label=wind]
+	rain -> rainstrong [label=strong]
+	rainstrong [label=no]
+	rain -> rainweak [label=weak]
+	rainweak [label=yes]
+	"" -> sunny [label=sunny]
+	sunny [label=humidity]
+	sunny -> sunnyhigh [label=high]
+	sunnyhigh [label=no]
+	sunny -> sunnynormal [label=normal]
+	sunnynormal [label=yes]
+}
